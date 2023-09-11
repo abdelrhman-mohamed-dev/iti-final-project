@@ -1,5 +1,6 @@
-export const API_KEY = process.env.VITE_APP_TMDB_API_KEY;
-
+// export const API_KEY = import.meta.env.VITE_APP_TMDB_API_KEY; //not working in deployment
+export const API_KEY = "9ad96dce9308f16e8bd78e9ee388b8af";
+// console.log(API_KEY);
 export const IMAGE_LINK = "https://image.tmdb.org/t/p/w500";
 export const IMAGE_UNAVAILABLE_PLACEHOLDER =
   "https://upload.wikimedia.org/wikipedia/en/6/60/No_Picture.jpg";
