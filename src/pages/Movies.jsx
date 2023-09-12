@@ -7,6 +7,7 @@ import NavComp from "../components/Navbar";
 import { PaginationComp } from "../components/PaginationComp";
 import { MovieContext } from "../context/MovieContext";
 import { container } from "../helpers/framerMotion";
+import Footer from "../components/Footer";
 
 export default function Movies() {
   const { movies, movieGenres, handleGenres, latestTotalPages } =
@@ -22,7 +23,7 @@ export default function Movies() {
           animate="visible"
           className="genres d-flex flex-wrap "
           style={{
-            gap:'5px 15px'
+            gap: "5px 15px",
           }}
         >
           {movieGenres?.map((item) => (
@@ -48,6 +49,7 @@ export default function Movies() {
           <PaginationComp totalPages={latestTotalPages} />
         </div>
       </Container>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { MovieCard } from "../components/MovieCard";
 import NavComp from "../components/Navbar";
+import Footer from "../components/Footer";
 import { PaginationComp } from "../components/PaginationComp";
 import { MovieContext } from "../context/MovieContext";
 
@@ -23,6 +24,7 @@ export default function Home() {
           <PaginationComp totalPages={trendingTotalPages} />
         </div>
       </Container>
+      <Footer />
     </>
   );
 }

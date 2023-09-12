@@ -4,6 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Genre } from "../components/Genre";
 import NavComp from "../components/Navbar";
+import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { API_KEY, IMAGE_LINK } from "../constants";
@@ -176,6 +177,7 @@ export default function ShowInfo() {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+      <Footer />
     </>
   );
 }

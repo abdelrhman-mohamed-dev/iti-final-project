@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
 import NavComp from "../components/Navbar";
+import Footer from "../components/Footer";
+
 import { MovieCard } from "../components/MovieCard";
 
 const Favorite = () => {
@@ -23,6 +25,7 @@ const Favorite = () => {
         </Row>
         {favorites ? "" : <h1>There is no favorites yet</h1>}
       </Container>
+      <Footer />
     </>
   );
 };
