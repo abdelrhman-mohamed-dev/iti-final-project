@@ -13,18 +13,9 @@ const TvSeries = lazy(() => import("./pages/TvSeries"));
 const ShowInfo = lazy(() => import("./pages/ShowInfo"));
 const Favorite = lazy(() => import("./pages/Favorite"));
 const Login = lazy(() => import("./pages/Login/Login"));
-const Protected = lazy(() => import("./pages/Protected/Protected"));
 const Pagenotfound = lazy(() => import("./pages/Pagenotfound/Pagenotfound"));
 
 
-{/* <Route path="/" element={ <Protected> <Home /> </Protected> } />
-            <Route path="/login" element={<Login />} />
-            <Route path="/movies" element={ <Protected> <Movies /> </Protected> } />
-            <Route path="/tv-series" element={ <Protected> <TvSeries /> </Protected> } />
-            <Route path="/search" element={ <Protected> <Search /> </Protected> } />
-            <Route path="/favorite" element={ <Protected> <Favorite /> </Protected> } />
-            <Route path="/:id" element={ <Protected> <ShowInfo /> </Protected> } />
-            <Route path="/tv/:id" element={ <Protected> <ShowTvInfo /> </Protected> } /> */}
 
 export default function App() {
     
